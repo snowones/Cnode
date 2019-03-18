@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 
-class Details extends React.Component{
+class Details extends Component{
     render(){
         return "文章详情"
     }
