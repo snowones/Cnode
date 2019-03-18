@@ -3,6 +3,7 @@ import{Link} from "react-router-dom";
 import {Menu} from "antd"
 
 class Index extends Component{
+    
     render(){
         return (
             <div className="wrap">
