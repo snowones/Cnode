@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import {Row,Col} from "antd";
 import IndexMenu from "./indexMenu";
-import List from  "./List";
+import IndexList from  "./List";
 
 // 测试
 // let arr = [];
@@ -33,7 +33,7 @@ class Index extends Component{
                  xs={24}
                  className="indexList"
             >
-            <List/>
+            <IndexList/>
             </Col>
             </Row>
         )

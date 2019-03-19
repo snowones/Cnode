@@ -32,6 +32,10 @@
 }
 .indexList{
     border-left: 1px solid #ccc;
+    padding: 0 10px;
+}
+.indexList p{
+        margin: 0;
 }
 /* 这是使用媒体查询时的方案 */
 /* 在小屏幕下的侧边栏显示 */
