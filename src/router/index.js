@@ -17,11 +17,11 @@ class RouterIndex extends Component{
                     //首页里还有子路由 怎么跑起来
                      //  path='/'当访问根目录时  exact严格匹配  render重定向 到首页index
                 )} />
-                <Route path="/index/:id" component={Index}/>
+                <Route path="/index" component={Index}/>
                 <Route path="/book" component={Book}/>
                 <Route path="/about" component={About}/>
-                <Route path="/user/:id" component={User}/>
-                <Route path="/details/:id" component={Details}/>
+                <Route path="/user" component={User}/>
+                <Route path="/details" component={Details}/>
             </Switch>
         );
     }

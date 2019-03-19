@@ -6,6 +6,74 @@
 .main{
     flex: 1;
 }
+.main .wrap{
+    border: 1px solid #ccc;
+    border-top: none;
+    overflow: hidden;
+}
+.indexSider{
+     border-right: 1px solid #ccc;
+     padding-bottom: 9999px;
+     margin-bottom: -9999px;
+}
+
+/*在大屏幕下的main显示  */
+#indexMenu li{
+    text-align: center;
+    margin-right: -1px;
+    border-right: 3px solid rgba(0,0,0,0);
+}
+#indexMenu .ant-menu-item-selected{
+  border-right: 3px solid #1890ff;
+  background: #e6f7ff;
+}
+#indexMenu{
+    border-right: none;
+}
+.indexList{
+    border-left: 1px solid #ccc;
+}
+/* 这是使用媒体查询时的方案 */
+/* 在小屏幕下的侧边栏显示 */
+/* @media all and (max-width:767px){
+    #indexMenu{
+        display: flex;
+        border-bottom: 1px solid #ccc;
+    }
+    #indexMenu li{
+        flex: 1;
+        margin: 0 0 -1px 0;
+        border: none;
+        border-bottom: 3px solid rgba(0,0,0,0);
+    }
+    #indexMenu li:hover,
+    #indexMenu .ant-menu-item-selected{
+        border-right: none;
+        border-bottom: 3px solid #1890ff;
+        background: none;
+      }
+      .indexList{
+          border-left: none;
+      }
+
+} */
+#indexXsMenu{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+#indexXsMenu li{
+    flex: 1;
+    margin: 0 0 -1px 0;
+    border: none;
+    border-bottom: 3px solid rgba(0,0,0,0);
+}
+#indexXsMenu li:hover,
+#indexXsMenu .ant-menu-item-selected{
+    border-right: none;
+    border-bottom: 3px solid #1890ff;
+    background: none;
+  }
+
 .wrap{
     max-width: 980px;
     margin:0 auto;
