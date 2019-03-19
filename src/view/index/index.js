@@ -11,8 +11,10 @@ import List from  "./List";
 
 
 class Index extends Component{
-    
+
     render(){
+        console.log(this.props);
+
         return (
             <Row className="wrap">
             <Col md={6} xs={0} className="indexSider">
@@ -31,7 +33,7 @@ class Index extends Component{
                  xs={24}
                  className="indexList"
             >
-            <list/>>
+            <List/>
             </Col>
             </Row>
         )
