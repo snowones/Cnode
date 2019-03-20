@@ -118,3 +118,17 @@
     top: 0;
     width: auto;
 }
+
+.replyList  .ant-List-item-meta-avatar{
+    display: block;
+}
+
+.ant-List-item-meta{
+    min-width: 200px;
+    align-items: center;
+}
+
+.wrap img {
+    /* 图片会随屏幕缩小而不会超出屏幕 */
+    max-width: 100%;
+}
