@@ -1,11 +1,13 @@
 import React,{Component} from "react";
-import{Link} from "react-router-dom";
-import {Menu} from "antd"
+import PublicCard from "../public_Card";
+import  data from "./data";
 
 
 class Book extends Component{
     render(){
-        return "教程"
+        return(<PublicCard
+                data={data}
+        />);
     }
 }
 
