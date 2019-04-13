@@ -13,7 +13,7 @@ import IndexList from  "./List";
 class Index extends Component{
 
     render(){
-        console.log(this.props);
+        let tab = this.props.match.params.id;//找到分类
 
         return (
             <Row className="wrap">
@@ -33,7 +33,9 @@ class Index extends Component{
                  xs={24}
                  className="indexList"
             >
-            <IndexList/>
+            <IndexList
+                tab = {tab}
+            />
             </Col>
             </Row>
         )
