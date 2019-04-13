@@ -7,21 +7,21 @@ export default class TxtDetails extends Component{
     render(){
         let {loading,data} = this.props;
         const title = (<div>
-            <h1>{data.data.title}</h1>
+            <h1>{data.title}</h1>
             <div style={{
                 display:"flex",
                 alignItems:"center"
             }}>
                     <TxtTag 
-                        data={data.data}
+                        data={data}
                     />
                     <Avatar
-                        src={data.data.author.avatar_url}
+                        src={data.author.avatar_url}
                     />
-                    <Link to={"/user/"+data.data.author.loginname}>
-                    {data.data.author.loginname}
+                    <Link to={"/user/"+data.author.loginname}>
+                    {data.author.loginname}
                     </Link>
-                    发表于{data.data.create_at.split("T")[0]}
+                    发表于{data.create_at.split("T")[0]}
             </div>
         </div>)
         return (
@@ -32,7 +32,7 @@ export default class TxtDetails extends Component{
                 >
                 <div
                     dangerouslySetInnerHTML={{
-                        __html:data.data.content
+                        __html:data.content
                     }}
                 >
                 </div>
