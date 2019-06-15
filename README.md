@@ -20,6 +20,6 @@ npm start
 
 
 ###  展示效果  ###
-[my-logo.png]: <page.png> "my-logo"
+[my-logo.png]: <./page.png> "my-logo"
 
 
